@@ -3,6 +3,8 @@ package com.example.mad_practical10_21012011032
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
+import com.example.mad_practical10_21012011032.databinding.ActivityMainBinding
+import com.google.android.gms.maps.GoogleMap
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,6 +16,8 @@ import org.json.JSONObject
 import java.util.jar.Attributes.Name
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var mMap: GoogleMap
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
