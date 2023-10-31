@@ -28,7 +28,6 @@
         android:id="@+id/floatingBt"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_autorenew_24"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="20dp"

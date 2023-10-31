@@ -11,9 +11,9 @@ import com.google.android.material.button.MaterialButton
 
 class PersonAdapter (context: Context,val personArray: ArrayList<Person>):ArrayAdapter<Person>(context,0,personArray) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val view = LayoutInflater.from(context).inflate(R.layout.person_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.person_item, parent, false)
 
-
+        val contact = getItem(position)
         view.findViewById<TextView>(R.id.textName1)
         view.findViewById<TextView>(R.id.text_no)
         view.findViewById<TextView>(R.id.textemail)

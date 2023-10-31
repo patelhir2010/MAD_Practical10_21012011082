@@ -16,8 +16,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
-    private var lat: Double = 0.0
-    private var log: Double = 0.0
+    private var lat:Double = 0.0
+    private var log:Double = 0.0
     private var title = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +25,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        val obj = intent.getSerializableExtra("Object") as Person
+        lat = obj.latitude
+        log = obj.longitude
+        title = obj.name
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -41,19 +43,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-        mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
+
         val sydney = LatLng(lat,  log )
-        mMap.addMarker(MarkerOptions().position(sydney)
-            .title(title)
-            .snippet(title)
-            .icon(BitmapDescriptorFactory.fromResource(R.drawable.img))
-        )
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,16.0f))
+        mMap.addMarker(MarkerOptions().position(sydney).title(title))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
-
-
 
 }
