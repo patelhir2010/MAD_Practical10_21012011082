@@ -1,4 +1,4 @@
-# MAD_Practical10_21012011032
+#mad_practical10_21012011082
 
 Study: JSON Format, ListView, RecyclerView, Google Map, HttpURLConnection, CoroutineScope
 
@@ -22,12 +22,10 @@ Add Internet Permission in  Manifest file
 
 Create Class HttpRequest for communicating with Web URL
 
-![image](https://github.com/JaviyaShreya/MAD_Practical10_21012011032/assets/98646013/dd1adfc6-8b89-4ebb-91ae-415c3bcd0866)
+![image](https://github.com/patelhir2010/MAD_Practical10_21012011082/assets/139534069/90eaef3a-7502-47a1-bbb7-40c60d03e6be)
 
-![image](https://github.com/JaviyaShreya/MAD_Practical10_21012011032/assets/98646013/ec447a1e-fc2b-4087-abc3-0a591a00257d)
+![image](https://github.com/patelhir2010/MAD_Practical10_21012011082/assets/139534069/1173027a-f741-46a9-aac3-bf43e53fb283)
 
-![image](https://github.com/JaviyaShreya/MAD_Practical10_21012011032/assets/98646013/c178e49c-fbe1-41e9-a0bd-128533f2945f)
+![image](https://github.com/patelhir2010/MAD_Practical10_21012011082/assets/139534069/52db779c-0036-4f57-9591-47c4ca9ef0e1)
 
-![image](https://github.com/JaviyaShreya/MAD_Practical10_21012011032/assets/98646013/8a83c421-a16c-4de0-822a-280d52caddfb)
-
-![image](https://github.com/JaviyaShreya/MAD_Practical10_21012011032/assets/98646013/fd5a403e-d6ab-4ed4-921d-f11ee50dfd6a)
+![image](https://github.com/patelhir2010/MAD_Practical10_21012011082/assets/139534069/d8c7f91c-b174-43bb-9ef5-513d23314518)
